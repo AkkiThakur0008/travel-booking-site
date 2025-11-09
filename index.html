@@ -1,0 +1,60 @@
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+<script type="text/javascript">
+   emailjs.init("akkithakurclasher04@gmail.com"); // Replace with your EmailJS User ID
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountain Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Mountain Explorer</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#booking">Booking</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="parallax" id="mountain1"></div>
+    <div class="parallax" id="mountain2"></div>
+    <div class="parallax" id="mountain3"></div>
+
+    <div class="content">
+      <h1 class="glow-text">Conquer New Heights</h1>
+      <p class="dynamic-text">Adventure awaits beyond the mountains…</p>
+      <button id="exploreBtn">Explore Now</button>
+    </div>
+
+    <div class="particles"></div>
+  </section>
+
+  <section id="booking" class="booking-section">
+    <h2>Book Your Expedition</h2>
+    <form id="bookingForm">
+      <input type="text" id="destination" placeholder="Mountain or Region" required>
+      <input type="date" id="checkin" required>
+      <input type="date" id="checkout" required>
+      <input type="number" id="guests" placeholder="Number of Climbers" min="1" required>
+      <button type="submit">Find Adventures</button>
+    </form>
+    <div id="bookingResults" class="results"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mountain Explorer</p><br>
+    <p></p>All rights reserved By - Akki</p>
+
+  </footer>
+
+  <div class="cursor-glow"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
